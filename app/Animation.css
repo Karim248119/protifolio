@@ -1,0 +1,131 @@
+.skills {
+    width: calc(250px *18);
+    animation: slide 30s linear infinite;
+}
+
+.skills:hover {
+    animation-play-state: paused;
+}
+
+.skills img:hover {
+    scale: 1.1;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px *9));
+    }
+}
+
+
+.slideRight {
+
+    animation: slideRight 1.5s ease forwards;
+}
+
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slideTop {
+
+    animation: slideTop 1s ease forwards;
+}
+
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slideLeft {
+
+    animation: slideHalfLeft 2s ease forwards;
+}
+
+
+@keyframes slideHalfLeft {
+    0% {
+        transform: translateX(50%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-tl {
+
+    animation: slideTopLeft 3s ease forwards;
+}
+@keyframes slideTopLeft {
+    0% {
+        transform: translate(100%,-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-bl {
+
+    animation: slideBottomLeft 1s ease forwards;
+}
+
+@keyframes slideBottomLeft {
+    0% {
+        transform: translate(100%, 100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.slide-l {
+
+    animation: slideLeft 2s ease forwards;
+}
+
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

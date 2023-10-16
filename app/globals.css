@@ -1,0 +1,382 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@font-face {
+  font-family: "Game of Thrones";
+  src: url("https://db.onlinewebfonts.com/t/97c4b25dc74e0ab045154e75a8fdd69d.eot");
+  src: url("https://db.onlinewebfonts.com/t/97c4b25dc74e0ab045154e75a8fdd69d.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/97c4b25dc74e0ab045154e75a8fdd69d.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/97c4b25dc74e0ab045154e75a8fdd69d.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/97c4b25dc74e0ab045154e75a8fdd69d.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/97c4b25dc74e0ab045154e75a8fdd69d.svg#Game of Thrones")format("svg");
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+
+}
+
+.bg-personal{
+  background-image: url(../pics/personal.png);
+  background-position: center center;
+  background-size: cover;
+}
+
+.NAV a {
+
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-size: smaller;
+    padding: 5px;
+}
+.NAV a:hover{
+  color: #0ee7cb;
+}
+
+/* .NAV a::before {
+    content: '';
+    position: absolute;
+    background-color: rgb(59 130 246);
+    width: 100%;
+    height: 1px;
+    left: 0;
+    top: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.NAV a:hover:before {
+    transform: scaleX(1);
+    transition: 0.5s ease;
+
+} */
+
+/* .NAV a::after {
+    content: '';
+    position: absolute;
+    background-color: rgb(59 130 246);
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    transform: scaleX(0);
+    transform-origin: right bottom;
+}
+
+.NAV a:hover:after {
+    transform: scaleX(1);
+    transition: 0.5s ease;
+} */
+
+
+button{
+  border: none;
+    padding: 5px 10px;
+    font-size: 15px;
+    position: relative;
+    background: transparent;
+    color: #0ee7cb;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.7s;
+    overflow: hidden;
+}
+    .btn-15 {
+      border: none;
+      padding: 6px 12px;
+      font-size: 15px;
+      background: transparent;
+      color: #0ee7cb;
+      text-transform: uppercase;
+      border: 3px solid #0ee7cb;
+      cursor: pointer;
+      transition: all 0.7s;
+      overflow: hidden;
+      
+    }
+  
+    .btn-15:hover {
+      color: #fff;
+    }
+  
+    span {
+      transition: all 0.7s;
+      z-index: -1;
+    }
+  
+    .btn-15 .first {
+      content: "";
+      position: absolute;
+      right: 100%;
+      top: 0;
+      width: 25%;
+      height: 100%;
+      background: #0ee7cb;
+    }
+  
+    .btn-15:hover .first {
+      top: 0;
+      right: 0;
+    }
+  
+    .btn-15 .second {
+      content: "";
+      position: absolute;
+      left: 25%;
+      top: -100%;
+      height: 100%;
+      width: 25%;
+      background: #0ee7cb;
+    }
+  
+    .btn-15:hover .second {
+      top: 0;
+      left: 50%;
+    }
+  
+    .btn-15 .third {
+      content: "";
+      position: absolute;
+      left: 50%;
+      height: 100%;
+      top: 100%;
+      width: 25%;
+      background: #0ee7cb;
+    }
+  
+    .btn-15:hover .third {
+      top: 0;
+      left: 25%;
+    }
+  
+    .btn-15 .fourth {
+      content: "";
+      position: absolute;
+      left: 100%;
+      top: 0;
+      height: 100%;
+      width: 25%;
+      background: #0ee7cb;
+    }
+  
+    .btn-15:hover .fourth {
+      top: 0;
+      left: 0;
+    }
+
+.got{
+  font-family: "Game of Thrones";
+}
+
+.card{
+  overflow: hidden;
+}
+.info{
+  transition: 0.5s all;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card:hover .info{
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+
+}
+.shadow{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.bg-img{
+
+  background-size: cover;
+  background-position: center center;
+}
+.bg-img2 {
+
+  background-size: cover;
+  background-position: center center;
+  background-image: url(https://images.pexels.com/photos/4078342/pexels-photo-4078342.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+.bg-bg{
+/* background: rgb(20,184,166);
+background: linear-gradient(45deg, rgba(20,184,166,1) 25%, rgba(56,205,202,1) 56%, rgba(103,232,249,1) 81%); */
+background-color: #0ee7cb;
+}
+
+.text-bg {
+/* background: rgb(20,184,166);
+background: linear-gradient(45deg, rgba(20,184,166,1) 25%, rgba(56,205,202,1) 56%, rgba(103,232,249,1) 81%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+    color: #0ee7cb;
+}
+ .shadow-bg{
+box-shadow:
+    0 0 10px #0ee7cb;
+ }
+.container:focus-within p{
+  scale: 0.7;
+  color:#0ee7cb;
+  bottom: 40px;
+  transition: 0.5s ease;
+}
+
+
+
+.btn-15 {
+  color: #0ee7cb;
+  border: 1px solid#0ee7cb;
+
+  z-index: 1;
+}
+
+.btn-15:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background: #0ee7cb;
+
+}
+
+.btn-15:hover {
+  color: #000;
+    box-shadow:
+        0 0 20px #0ee7cb;
+}
+
+.btn-15:hover:after {
+  left: 0;
+  width: 100%;
+
+      transition: all 0.5s ease;
+}
+
+.btn-15:active {
+  top: 2px;
+}
+
+.btn-1:hover{
+  transition: 0.5s ease;
+    box-shadow:
+        0 0 10px #0ee7cb;
+
+  cursor: pointer;
+}
+
+.bg-gb{
+  background-color: #313741;
+}
+.bg-black {
+  background-color: #22252c;
+}
+
+.bg-g{
+  background-color: #0ee7cb;
+}
+.text-g{
+  color: #0ee7cb;
+}
+.border-g,
+.focus-border-g:focus-within{
+  border-color: #0ee7cb;
+}
+
+.hover-bg-g:hover{
+background-color: #0ee7cb;
+}
+
+.grid-rows-temp{
+grid-template-rows: repeat(13, minmax(0, 1fr));
+
+}
+
+
+.menu {
+  background-color: var(--black);
+  width: 100%;
+  text-align: center;
+  border-radius: 4px;
+  right: 0;
+  transition: all 50ms;
+}
+.btn{
+  transition: 1s ease;
+}
+
+.wave-container {
+  background-color: #22252c;
+  position: relative;
+  
+}
+
+.wave-container::before {
+  content: "";
+  
+  width: 100%;
+  position: absolute;
+  bottom: -0.3%;
+  left: 0;
+  background-size: auto;
+  background-repeat: repeat no-repeat;
+  background-position: 72vw bottom;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200 134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 1C19.5523 3 32.2291 5 51.5 9C104.5 19 200 43 300 65C400 88 500 111 600 102C700 93 800 53 900 30C987.526 5 1085.36 -1 1150 0C1169.54 -1 1180.49 0 1200 1V134H1150C1100 134 1000 134 900 134C800 134 700 134 600 134C500 134 400 134 300 134C200 134 100 134 50 134H0V1.98128Z' fill='%230ee7cb'/></svg>");
+}
+
+@media(max-width:850px) {
+  .wave-container::before {
+    height: 84px
+  }
+}
+.s-shadow{
+-webkit-box-shadow: 0px 17px 31px -11px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 17px 31px -11px rgba(0, 0, 0, 1);
+  box-shadow: 0px 17px 31px -11px rgba(0, 0, 0, 1);
+}
+
+::selection {
+  color:#22252c;
+  background:#0ee7cb;
+}
+/* ::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  background:black;
+}
+::-webkit-scrollbar-thumb {
+  background:#0ee7cb;
+  
+} */
+.Nav-hover:hover p{
+opacity: 1;
+left: -80px;
+transition: 0.5s ease;
+}
