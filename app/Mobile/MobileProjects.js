@@ -15,7 +15,7 @@ import ProjectCard from "../Components/ProjectCard";
 export default function MobileProjects() {
   return (
     <div id="mobProjects" className="p-7">
-      <h1 className=" text-2xl font-semibold tracking-wide pb-7 text-center w-full text-bg capitalize">
+      <h1 className=" text-2xl font-semibold tracking-wide pb-7 text-center w-full text-white capitalize">
         Web projects
       </h1>
       <div className=" h-[75vh] w-full grid grid-cols-1 grid-rows-3 px-5 gap-7 relative text-black">
@@ -121,7 +121,7 @@ export default function MobileProjects() {
           </div>
         </div>
       </div>
-      <h1 className=" text-2xl font-semibold tracking-wide pb-7 pt-12 text-center w-full text-bg capitalize">
+      <h1 className=" text-2xl font-semibold tracking-wide pb-7 pt-12 text-center w-full text-whie capitalize">
         Mobile projects
       </h1>
       <div className=" h-[75vh] w-full grid grid-cols-1 grid-rows-3 px-5 gap-7 relative text-black">

@@ -3,8 +3,8 @@ import React from "react";
 export default function MobileSkills() {
   return (
     <>
-      <div className="h-[100vh] p-8 pt-0 w-full bg-g  text-xs  font-semibold wavy-bg">
-        <h1 className="  pb-7 text-center text-2xl text-black font-bold tracking-wide pt-32">
+      <div className="h-[90vh] p-8 pt-0 w-full bg-g  text-xs  font-semibold wavy-bg">
+        <h1 className="  pb-7 text-center text-2xl text-black font-bold tracking-wide pt-28">
           Skills
         </h1>
         <div className=" h-[60vh] w-full grid grid-cols-2 grid-rows-5 gap-5">
