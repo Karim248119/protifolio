@@ -17,7 +17,7 @@ export default function MobileAbout() {
       </div>
       <div className="w-full  flex items-center flex-col -mt-5 text-bg">
         <h1 className="  text-xl  pb-2  ">Karim Abdel-Halim</h1>
-        <p className="  pb-2 text-sm text-white">Front-End Website Developer</p>
+        <p className="  pb-2 text-sm text-white">Front-End Developer</p>
         <div className=" flex items-center gap-1 text-sm ">
           <FontAwesomeIcon icon={faLocationDot} />
           <p className=" text-white">Egypt, Cairo</p>
